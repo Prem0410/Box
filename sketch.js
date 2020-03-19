@@ -11,12 +11,12 @@ var gSlider;
  
  
 function setup() {
-    createCanvas(500, 500);
+    createCanvas(400, 500);
     engine = Engine.create();
     world = engine.world;
     Engine.run(engine);
  
-    gSlider = createSlider(0, 100, 50);
+    gSlider = createSlider(600, 100, 50);
     gSlider.position(40, 365);
     gSlider.input = map(engine.world.gravity, gSlider.min, gSlider.max, 0, 1);
  
