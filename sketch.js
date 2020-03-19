@@ -11,7 +11,7 @@ var gSlider;
  
  
 function setup() {
-    createCanvas(400, 400);
+    createCanvas(1200, 1200);
     engine = Engine.create();
     world = engine.world;
     Engine.run(engine);
@@ -29,12 +29,12 @@ function setup() {
  
 function mousePressed() {
     if (mouseY < 350) {
-        boxes.push(new Box(mouseX, mouseY, random(10, 40), random(10, 40)));
+        boxes.push(new Box(mouseX, mouseY, random(10, 80), random(10, 80)));
     }
 }
  
 function draw() {
-    background(51);
+    background(150);
     var fVal = gSlider.value();
  
     for (var i = 0; i < boxes.length; i++) {
