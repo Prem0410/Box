@@ -11,7 +11,7 @@ var gSlider;
  
  
 function setup() {
-    createCanvas(1200, 1200);
+    createCanvas(500, 500);
     engine = Engine.create();
     world = engine.world;
     Engine.run(engine);
